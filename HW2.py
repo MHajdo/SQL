@@ -81,6 +81,7 @@ JOIN Invoice
 ON Customer.CustomerId = Invoice.CustomerId
 GROUP BY Invoice.CustomerId
 ORDER BY Money_spent DESC
+Limit 1
 ''')
 
 # 7 - WHAT SONGS WERE BOUGHT WITH EACH OTHER)
